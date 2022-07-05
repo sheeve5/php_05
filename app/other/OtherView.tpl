@@ -1,6 +1,4 @@
-
-
-{extends file="../templates/main.tpl"}
+{extends file=$conf->root_path|cat:"/templates/main.tpl"}
 
 {block name=footer}Ta część stopki została wpisana z drugiego szablonu{/block}
 

@@ -1,4 +1,4 @@
-{extends file="../templates/main.tpl"}
+{extends file=$conf->root_path|cat:"/templates/main.tpl"}
 
 {block name=footer}Ta część stopki została wpisana z szablonu kalkulatora{/block}
 
@@ -11,7 +11,7 @@
 				<header class="page-header">
 					<h1 class="page-title">Podaj parametry</h1>
 				</header>
-				<form action="{$conf->app_url}/app/calc.php" method="post">
+				<form action="{$conf->action_root}calcCompute" method="post">
 						<div class="row">
 							<div class="col-sm-4">
 								<input class="form-control" id="x" type="text" placeholder="Kwota" name="x" value="{$form->amount}">

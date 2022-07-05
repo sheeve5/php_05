@@ -9,11 +9,11 @@ class OtherCtrl{
 		$smarty = new Smarty();
 		$smarty->assign('conf',$conf);
 		
-		$smarty->assign('page_title','Przykład 05');
-		$smarty->assign('page_description','Obiektowość. Funkcjonalność aplikacji zamknięta w metodach różnych obiektów. Pełen model MVC.');
-		$smarty->assign('page_header','Obiekty w PHP');
+		$smarty->assign('page_title','Przykład 06');
+		$smarty->assign('page_description','Aplikacja z jednym "punktem wejścia". Model MVC, w którym jeden główny kontroler używa różnych obiektów kontrolerów w zależności od wybranej akcji - przekazanej parametrem.');
+		$smarty->assign('page_header','Kontroler główny');
 		
-		$smarty->display($conf->root_path.'/app/OtherView.tpl');
+		$smarty->display($conf->root_path.'/app/other/OtherView.tpl');
 	}
     
     
